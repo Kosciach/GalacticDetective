@@ -5,9 +5,13 @@ using UnityEngine;
 public class SignalController : MonoBehaviour
 {
     private Transform _stationSignalReceiver; public Transform StationSignalReceiver { get { return _stationSignalReceiver; } set { _stationSignalReceiver = value; } }
+    private MenuController _mainController;
 
 
-
+    private void Awake()
+    {
+        _mainController = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<MenuController>();
+    }
     private void Start()
     {
         LeanTween.move(gameObject, _stationSignalReceiver.position, 2f).setOnComplete(StartDecode);
@@ -15,6 +19,6 @@ public class SignalController : MonoBehaviour
 
     private void StartDecode()
     {
-        Debug.Log("StartDecode");
+        _mainController.OfficeCanvas();
     }
 }

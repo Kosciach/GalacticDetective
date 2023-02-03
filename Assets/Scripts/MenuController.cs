@@ -4,12 +4,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class UIController : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
     [SerializeField] SpaceShipSpawnerScript _spaceShipSpawner;
+
+    [Header("====Menu====")]
     [SerializeField] Volume _blur;
     [SerializeField] CanvasGroup _canvasGroup;
     [SerializeField] GameObject[] _screens;
+
+    [Header("====Office====")]
+    [SerializeField] GameObject _officeCanvas;
+
 
     private float _desiredBlurWeight = 1f;
     private void Start()
@@ -40,5 +46,12 @@ public class UIController : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+
+
+    public void OfficeCanvas()
+    {
+        _officeCanvas.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
