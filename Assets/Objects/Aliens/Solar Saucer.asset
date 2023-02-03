@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b15719d913f7a4bac16bf241ca2ad1, type: 3}
-  m_Name: Satelite_SA
+  m_Name: Solar Saucer
   m_EditorClassIdentifier: 
-  Speed: 2.6
-  Size: 0.3
+  Name: Solar Saucer
+  Speed: 0.1
+  Size: 0.5
+  EngineType: Solar
+  MagneticFieldStrength: 230
+  Loudness: 0

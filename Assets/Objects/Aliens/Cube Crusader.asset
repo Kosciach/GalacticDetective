@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b15719d913f7a4bac16bf241ca2ad1, type: 3}
-  m_Name: UFO_Gold
+  m_Name: Cube Crusader
   m_EditorClassIdentifier: 
-  Speed: 0.6
+  Name: Cube Crusader
+  Speed: 1
   Size: 0.5
+  EngineType: Antigravity
+  MagneticFieldStrength: 800
+  Loudness: 0

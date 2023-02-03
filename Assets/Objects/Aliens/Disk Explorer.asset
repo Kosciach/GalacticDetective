@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b15719d913f7a4bac16bf241ca2ad1, type: 3}
-  m_Name: UFO_Triangle
+  m_Name: Disk Explorer
   m_EditorClassIdentifier: 
-  Speed: 0.4
+  Name: Disk Explorer
+  Speed: 1.1
   Size: 0.5
+  EngineType: Fusion
+  MagneticFieldStrength: 150
+  Loudness: 20

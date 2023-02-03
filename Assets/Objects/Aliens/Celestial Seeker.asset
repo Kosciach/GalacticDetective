@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b15719d913f7a4bac16bf241ca2ad1, type: 3}
-  m_Name: Satelite_BA
+  m_Name: Celestial Seeker
   m_EditorClassIdentifier: 
-  Speed: 3
-  Size: 0.3
+  Name: Celestial Seeker
+  Speed: 0.6
+  Size: 0.5
+  EngineType: Warp
+  MagneticFieldStrength: 100
+  Loudness: 4

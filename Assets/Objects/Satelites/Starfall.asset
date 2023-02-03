@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b15719d913f7a4bac16bf241ca2ad1, type: 3}
-  m_Name: Satelite_BS
+  m_Name: Starfall
   m_EditorClassIdentifier: 
+  Name: Starfall
   Speed: 3.6
   Size: 0.3
+  EngineType: Solid
+  MagneticFieldStrength: 2867
+  Loudness: 167

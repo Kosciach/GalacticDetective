@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b15719d913f7a4bac16bf241ca2ad1, type: 3}
-  m_Name: UFO_Cube
+  m_Name: Blue Triangle
   m_EditorClassIdentifier: 
-  Speed: 1
+  Name: Blue Triangle
+  Speed: 0.4
   Size: 0.5
+  EngineType: Warp
+  MagneticFieldStrength: 200
+  Loudness: 2
