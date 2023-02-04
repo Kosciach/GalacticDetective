@@ -11,4 +11,5 @@ public class SpaceShip : ScriptableObject
     public string EngineType;
     public float MagneticFieldStrength;
     public float Loudness;
+    public string RhytmCode;
 }

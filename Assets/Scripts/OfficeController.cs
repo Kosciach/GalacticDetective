@@ -19,9 +19,24 @@ public class OfficeController : MonoBehaviour
         foreach (GameObject screen in _screens) screen.SetActive(false);
         _buttons.SetActive(true);
     }
-    public void ExitOffice()
+    private void ExitOffice()
     {
         _mainCanvas.SetActive(true);
         gameObject.SetActive(false);
+    }
+    public void Cannon()
+    {
+
+        ExitOffice();
+    }
+    public void Jammer()
+    {
+
+        ExitOffice();
+    }
+    public void Nothing()
+    {
+
+        ExitOffice();
     }
 }

@@ -15,6 +15,7 @@ public class MenuController : MonoBehaviour
 
     [Header("====Office====")]
     [SerializeField] GameObject _officeCanvas;
+    [SerializeField] MonitorController _monitorController;
 
 
     private float _desiredBlurWeight = 1f;
@@ -49,8 +50,10 @@ public class MenuController : MonoBehaviour
     }
 
 
-    public void OfficeCanvas()
+    public void OfficeCanvas(SpaceShip spaceShipData)
     {
+        _monitorController.ReceivedCode = "*#@@@*";
+        _monitorController.CorrectSpaceShipData = spaceShipData;
         _officeCanvas.SetActive(true);
         gameObject.SetActive(false);
     }

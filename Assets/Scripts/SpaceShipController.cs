@@ -24,6 +24,8 @@ public class SpaceShipController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         GameObject newSignal = Instantiate(_signalPrefab, transform.position, transform.rotation);
-        newSignal.GetComponent<SignalController>().StationSignalReceiver = _stationDock.parent.GetChild(1);
+        SignalController newSignalController = newSignal.GetComponent<SignalController>();
+        newSignalController.StationSignalReceiver = _stationDock.parent.GetChild(1);
+        newSignalController.SpaceShipData = _spaceShipData;
     }
 }

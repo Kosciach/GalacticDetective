@@ -5,6 +5,7 @@ using UnityEngine;
 public class SignalController : MonoBehaviour
 {
     private Transform _stationSignalReceiver; public Transform StationSignalReceiver { get { return _stationSignalReceiver; } set { _stationSignalReceiver = value; } }
+    private SpaceShip _spaceShipData; public SpaceShip SpaceShipData { get { return _spaceShipData; } set { _spaceShipData = value; } }
     private MenuController _mainController;
 
 
@@ -19,6 +20,6 @@ public class SignalController : MonoBehaviour
 
     private void StartDecode()
     {
-        _mainController.OfficeCanvas();
+        _mainController.OfficeCanvas(_spaceShipData);
     }
 }
