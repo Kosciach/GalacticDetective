@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9137963348350379741}
   m_Layer: 0
   m_Name: UFO_Gold
-  m_TagString: Untagged
+  m_TagString: SpaceShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,3 +99,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spaceShipData: {fileID: 11400000, guid: 7b861b70a20e7b244aba4f49d171747a, type: 2}
   _signalPrefab: {fileID: 2686318399702531030, guid: e7b264d49a0f0d347942cc5c156c2e35, type: 3}
+  _destroyParticle: {fileID: 2053113394637815573, guid: 3732c88031eccb5448fe85ffa0ba2012, type: 3}
+  _jammerParticle: {fileID: 6751407085217583374, guid: 2b91c11efc431b14d82cee683e1a05eb, type: 3}

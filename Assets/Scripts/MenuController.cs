@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -16,9 +15,11 @@ public class MenuController : MonoBehaviour
     [Header("====Office====")]
     [SerializeField] GameObject _officeCanvas;
     [SerializeField] MonitorController _monitorController;
-
+    [SerializeField] char[] _symbols;
 
     private float _desiredBlurWeight = 1f;
+    private bool _isStarted;
+
     private void Start()
     {
         _spaceShipSpawner.gameObject.SetActive(false);
@@ -30,6 +31,9 @@ public class MenuController : MonoBehaviour
 
     public void StartButton()
     {
+        if (_isStarted) return;
+
+        _isStarted = true;
         _desiredBlurWeight = 0f;
         LeanTween.alphaCanvas(_canvasGroup, 0f, 1f).setOnComplete(ProperStart);
     }
@@ -52,9 +56,29 @@ public class MenuController : MonoBehaviour
 
     public void OfficeCanvas(SpaceShip spaceShipData)
     {
-        _monitorController.ReceivedCode = "*#@@@*";
+        _monitorController.ReceivedCode = GenerateCode();
         _monitorController.CorrectSpaceShipData = spaceShipData;
+        _monitorController.ResetMonitor();
         _officeCanvas.SetActive(true);
         gameObject.SetActive(false);
+    }
+
+    private string GenerateCode()
+    {
+        string generatedCode = "";
+        string generatedIntCode = "";
+        int randomSymbolIndex = 0;
+        for (int i = 0; i < 6; i++)
+        {
+            randomSymbolIndex = Random.Range(0, _symbols.Length);
+            generatedCode += _symbols[randomSymbolIndex];
+            generatedIntCode += randomSymbolIndex.ToString();
+        }
+        _monitorController.ReceivedIntCode = generatedIntCode;
+        return generatedCode;
+    }
+    private void OnEnable()
+    {
+        _isStarted = false;
     }
 }

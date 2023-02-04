@@ -12,4 +12,7 @@ public class SpaceShip : ScriptableObject
     public float MagneticFieldStrength;
     public float Loudness;
     public string RhytmCode;
+    public SpaceShipTypeEnum SpaceShipType;
+    public enum SpaceShipTypeEnum
+    { alien, spy, satelite}
 }

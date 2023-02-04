@@ -18,3 +18,5 @@ MonoBehaviour:
   EngineType: Cold gas
   MagneticFieldStrength: 2050
   Loudness: 100
+  RhytmCode: 
+  SpaceShipType: 2

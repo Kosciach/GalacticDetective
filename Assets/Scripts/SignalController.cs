@@ -21,5 +21,6 @@ public class SignalController : MonoBehaviour
     private void StartDecode()
     {
         _mainController.OfficeCanvas(_spaceShipData);
+        Destroy(gameObject);
     }
 }

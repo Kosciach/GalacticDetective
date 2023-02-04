@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - MainCanvas
+  - SpaceShip
+  - SpaceShipSpawner
   layers:
   - Default
   - TransparentFX
@@ -47,4 +49,7 @@ TagManager:
     locked: 0
   - name: Planet
     uniqueID: 3341223811
+    locked: 0
+  - name: SpaceShip
+    uniqueID: 3913333827
     locked: 0

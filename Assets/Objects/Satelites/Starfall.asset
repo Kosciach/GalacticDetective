@@ -18,3 +18,5 @@ MonoBehaviour:
   EngineType: Solid
   MagneticFieldStrength: 2867
   Loudness: 167
+  RhytmCode: 
+  SpaceShipType: 2

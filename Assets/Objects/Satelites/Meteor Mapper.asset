@@ -18,3 +18,5 @@ MonoBehaviour:
   EngineType: Ion
   MagneticFieldStrength: 3600
   Loudness: 200
+  RhytmCode: 
+  SpaceShipType: 2
