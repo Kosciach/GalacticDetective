@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
     [Header("===AudioSources====")]
-    [SerializeField] AudioSource _music;
+    [SerializeField] AudioSource _mainMusic;
+    [SerializeField] AudioSource _clockMusic;
     [SerializeField] AudioSource _buttonPress;
     [SerializeField] AudioSource _sliderSlide;
     [SerializeField] AudioSource _cannon;
@@ -61,7 +62,14 @@ public class AudioManager : MonoBehaviour
     }
     private void ChangeMusicVolume()
     {
-        _music.volume = _musicVolume;
+        _mainMusic.volume = _musicVolume;
+        _clockMusic.volume = _musicVolume;
+    }
+
+    public void SwitchMusic(bool mute)
+    {
+        _mainMusic.mute = !mute;
+        _clockMusic.mute = mute;
     }
 
 

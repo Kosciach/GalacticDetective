@@ -6,6 +6,7 @@ using UnityEngine.Rendering;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] SpaceShipSpawnerScript _spaceShipSpawner;
+    [SerializeField] AudioManager _audioManager;
 
     [Header("====Menu====")]
     [SerializeField] Volume _blur;
@@ -56,6 +57,7 @@ public class MenuController : MonoBehaviour
 
     public void OfficeCanvas(SpaceShip spaceShipData)
     {
+        _audioManager.SwitchMusic(false);
         _monitorController.ReceivedCode = GenerateCode();
         _monitorController.CorrectSpaceShipData = spaceShipData;
         _monitorController.ResetMonitor();

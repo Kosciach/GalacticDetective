@@ -13,6 +13,7 @@ public class OfficeController : MonoBehaviour
     [SerializeField] SpaceShipSpawnerScript _spaceShipSpawner;
     [SerializeField] AudioManager _audioManager;
     [SerializeField] RectTransform _clockValue;
+    [SerializeField] Image _isPlayingIndicator;
     [SerializeField] float _time; public float Time { get { return _time; } }
 
     public void SwitchScreenOn(GameObject selectedScreen)
@@ -28,6 +29,9 @@ public class OfficeController : MonoBehaviour
     }
     private void ExitOffice()
     {
+        StopAllCoroutines();
+        _isPlayingIndicator.color = new Color(1f, 0.01143568f, 0f, 0.4666667f);
+        _audioManager.SwitchMusic(true);
         GameObject.FindGameObjectWithTag("SpaceShip").layer = LayerMask.NameToLayer("Foreground");
         _screens[0].SetActive(false);
         _screens[1].SetActive(false);

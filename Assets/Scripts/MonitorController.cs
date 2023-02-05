@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonitorController : MonoBehaviour
 {
     [SerializeField] OfficeController _officeController;
+
     [Header("====Decoding====")]
     [SerializeField] TextMeshProUGUI[] _inputFields;
     [SerializeField] string _code;
@@ -13,6 +15,7 @@ public class MonitorController : MonoBehaviour
     [SerializeField] string _receivedIntCode; public string ReceivedIntCode { get { return _receivedIntCode; } set { _receivedIntCode = value; } }
     [SerializeField] GameObject _decoder;
     [SerializeField] GameObject _spyDot;
+    [SerializeField] Image _isPlayingIndicator;
 
     [Header("====DataFields====")]
     [SerializeField] TextMeshProUGUI _speed;
@@ -47,8 +50,12 @@ public class MonitorController : MonoBehaviour
     }
     public void RemoveSymbol()
     {
-        _inputFields[_currentInputFieldIndex].text = "";
-        _code.Remove(_code.Length-1);
+        if (_currentInputFieldIndex == 0) return;
+        StopAllCoroutines();
+        _isPlayingIndicator.color = new Color(1f, 0.01143568f, 0f, 0.4666667f);
+
+        _inputFields[_currentInputFieldIndex-1].text = "";
+        _code = _code.Remove(_code.Length-1, 1);
         _currentInputFieldIndex--;
     }
     public void ResetMonitor()
@@ -100,6 +107,7 @@ public class MonitorController : MonoBehaviour
     {
         StopCoroutine(StartMessage(0f));
 
+        _isPlayingIndicator.color = new Color(0.05291831f, 1f, 0f, 0.4666667f);
         PlayMessageAudio(0);
         float timeBewtweenSounds = _officeController.Time/25;
         StartCoroutine(StartMessage(timeBewtweenSounds));
