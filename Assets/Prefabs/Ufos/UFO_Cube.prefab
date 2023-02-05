@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4202304651346594124}
   - component: {fileID: 5954542620077766219}
   - component: {fileID: -7778379077903942457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UFO_Cube
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}

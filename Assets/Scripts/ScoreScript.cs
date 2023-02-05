@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreScript : MonoBehaviour
 {
@@ -31,12 +32,9 @@ public class ScoreScript : MonoBehaviour
     }
     public void TakeLife()
     {
-        if (_lives > 0)
-        {
-            _lives--;
-            _livesText.text = "Lives: "+_lives.ToString();
-        }
-        else Die();
+        _lives--;
+        _livesText.text = "Lives: "+_lives.ToString();
+        if(_lives == 0) Die();
     }
 
     public void AddScore()
@@ -54,6 +52,6 @@ public class ScoreScript : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Ksacu jeœli to czytasz to umiesz czytaæ - Pozdro600");
+        SceneManager.LoadScene("GameplayScene");
     }
 }

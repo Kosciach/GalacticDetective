@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 506764590121729229}
   - component: {fileID: 7256886632368369300}
   - component: {fileID: -6503215841689340147}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sun Driver
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}

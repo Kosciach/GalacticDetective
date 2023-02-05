@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2438777742697752310}
   - component: {fileID: 718618535042669351}
   - component: {fileID: 4780967752978221129}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Starfall
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}

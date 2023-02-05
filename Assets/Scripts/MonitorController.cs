@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MonitorController : MonoBehaviour
 {
+    [SerializeField] OfficeController _officeController;
     [Header("====Decoding====")]
     [SerializeField] TextMeshProUGUI[] _inputFields;
     [SerializeField] string _code;
@@ -97,17 +98,18 @@ public class MonitorController : MonoBehaviour
 
     public void PlayMessage()
     {
-        StopCoroutine(StartMessage());
+        StopCoroutine(StartMessage(0f));
 
         PlayMessageAudio(0);
-        StartCoroutine(StartMessage());
+        float timeBewtweenSounds = _officeController.Time/25;
+        StartCoroutine(StartMessage(timeBewtweenSounds));
     }
 
-    IEnumerator StartMessage()
+    IEnumerator StartMessage(float timeBewtweenSounds)
     {
         for (int i = 1; i < 6; i++)
         {
-            yield return new WaitForSeconds(_audioSource.clip.length + 2);
+            yield return new WaitForSeconds(_audioSource.clip.length + timeBewtweenSounds);
             PlayMessageAudio(i);
         }
     }

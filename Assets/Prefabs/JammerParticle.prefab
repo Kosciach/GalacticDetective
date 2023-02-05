@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1581114539479169959}
   - component: {fileID: 6751407085217583374}
   - component: {fileID: 2658384012370521172}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: JammerParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8631955064718858247}
   - component: {fileID: 2053113394637815573}
   - component: {fileID: 827376841854659602}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpaceShipDestroyParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 7594359904807872026}
   - component: {fileID: 7033602703096266230}
   - component: {fileID: 6691836194125625895}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SapceShipDestroyParticleYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9771,7 +9771,7 @@ GameObject:
   - component: {fileID: 5653077443015568528}
   - component: {fileID: 2501310334482650522}
   - component: {fileID: 8603676846176880401}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SapceShipDestroyParticlePurple
   m_TagString: Untagged
   m_Icon: {fileID: 0}

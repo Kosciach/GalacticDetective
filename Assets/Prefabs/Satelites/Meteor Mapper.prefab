@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4198620055291062582}
   - component: {fileID: 7818247539406808194}
   - component: {fileID: 2692598301085463522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Meteor Mapper
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}

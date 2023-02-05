@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6536911958163555501}
   - component: {fileID: 8412878885433179821}
   - component: {fileID: 4127503784395628790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Space Hourglass
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}

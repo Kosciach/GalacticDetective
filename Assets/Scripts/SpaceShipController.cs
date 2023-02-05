@@ -46,8 +46,9 @@ public class SpaceShipController : MonoBehaviour
     }
     public void Nothing()
     {
-        CheckAction(2); 
-        SpaceCraftLeave();
+        CheckAction(2);
+        CancelInvoke("SpaceCraftLeave");
+        Invoke("SpaceCraftLeave", 1f);
     }
     private void SpaceCraftLeave()
     {

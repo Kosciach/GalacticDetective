@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8358433671459653433}
   - component: {fileID: 2290570956631623634}
   - component: {fileID: 2534075381489963314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cosmic Cross
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4836528222420390993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.515373, y: -5.646048, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -9,6 +9,6 @@ public class Rotator : MonoBehaviour
 
     private void Update()
     {
-        transform.RotateAround(_center.position, _center.forward, _speed);
+        transform.RotateAround(Vector3.zero, _center.forward, _speed);
     }
 }

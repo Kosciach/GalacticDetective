@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5383395698599334230}
   - component: {fileID: 5250008653629252649}
   - component: {fileID: 9137963348350379741}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UFO_Gold
   m_TagString: SpaceShip
   m_Icon: {fileID: 0}

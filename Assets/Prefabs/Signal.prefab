@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2686318399702531031}
   - component: {fileID: 6171111645702700062}
   - component: {fileID: 7162608466568478426}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Signal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
