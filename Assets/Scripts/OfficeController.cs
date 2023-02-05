@@ -32,7 +32,12 @@ public class OfficeController : MonoBehaviour
         StopAllCoroutines();
         _isPlayingIndicator.color = new Color(1f, 0.01143568f, 0f, 0.4666667f);
         _audioManager.SwitchMusic(true);
-        GameObject.FindGameObjectWithTag("SpaceShip").layer = LayerMask.NameToLayer("Foreground");
+
+        GameObject currentSpaceShip = GameObject.FindGameObjectWithTag("SpaceShip");
+        currentSpaceShip.layer = LayerMask.NameToLayer("Foreground");
+        currentSpaceShip.GetComponent<SpriteRenderer>().enabled = true;
+        currentSpaceShip.transform.GetChild(0).gameObject.SetActive(false);
+
         _screens[0].SetActive(false);
         _screens[1].SetActive(false);
         _buttons.SetActive(true);

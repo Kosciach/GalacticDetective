@@ -120,6 +120,8 @@ public class MonitorController : MonoBehaviour
             yield return new WaitForSeconds(_audioSource.clip.length + timeBewtweenSounds);
             PlayMessageAudio(i);
         }
+        StopAllCoroutines();
+        _isPlayingIndicator.color = new Color(1f, 0.01143568f, 0f, 0.4666667f);
     }
     private void PlayMessageAudio(int i)
     {

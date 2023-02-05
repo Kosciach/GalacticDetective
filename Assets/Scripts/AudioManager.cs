@@ -15,6 +15,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource _monitor;
     [SerializeField] AudioSource _book;
     [SerializeField] AudioSource _backArrow;
+    [SerializeField] AudioSource _guideBookToogle;
+    [SerializeField] AudioSource _previousPage;
+    [SerializeField] AudioSource _nextPage;
 
     [Header("===Sliders====")]
     [SerializeField] Slider _soundSlider;
@@ -59,6 +62,9 @@ public class AudioManager : MonoBehaviour
         _monitor.volume = _soundVolume;
         _book.volume = _soundVolume;
         _backArrow.volume = _soundVolume;
+        _guideBookToogle.volume = _soundVolume;
+        _previousPage.volume = _soundVolume;
+        _nextPage.volume = _soundVolume;
     }
     private void ChangeMusicVolume()
     {
@@ -80,5 +86,14 @@ public class AudioManager : MonoBehaviour
     public void PlayJammer()
     {
         _jammer.Play();
+    }
+
+    public void PlayPreviousPage()
+    {
+        _previousPage.Play();
+    }
+    public void PlayNextPage()
+    {
+        _nextPage.Play();
     }
 }
