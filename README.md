@@ -20,12 +20,12 @@
 
 <br>
 
-<h3 align="center">
-  
+<h3 align="center">Signal
+
 </h3>
 
 <br>
 
-<h3 align="center">
+<h3 align="center">Deciding on what to do with a space ship
   
 </h3>
