@@ -27,5 +27,5 @@
 <br>
 
 <h3 align="center">
-  <a href="DecisionMaking">Decision Making</a>
+  <a href="DecisionMaking.md">Decision Making</a>
 </h3>
