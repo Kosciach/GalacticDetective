@@ -8,7 +8,7 @@
 </p>
 
   <p align="center">
-    Created for  Mini Jam 125: Signal.
+    Created for  Mini Jam 125: Signal by me and two of my friends.<br>
     In GalacticDetectic you have to decode signal from unknown space ship using given rhytm, to make right decision about this spaceship.
     
     
